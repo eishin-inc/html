@@ -1,0 +1,41 @@
+@import "./mixin.scss";
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+
+/* 下記、クラス名「forSp」をつけると、768px以下でのみ表示されます。
+クラス名「forPc」をつけると769px以上でのみ表示されます。 */
+
+/*********************************/
+/*               PC              */
+/*********************************/
+@media (min-width: 769px) and (max-width: 1279px) {
+  #index {
+    & .top {
+    }
+    & .message {
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  #index {
+    & .top {
+    }
+    & .message {
+    }
+  }
+}
+
+/*********************************/
+/*               SP              */
+/*********************************/
+@media (max-width: 768px) {
+  #index {
+    & .top {
+    }
+    & .message {
+    }
+  }
+}

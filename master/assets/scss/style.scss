@@ -1,0 +1,35 @@
+@import "./mixin.scss";
+@import "./common.scss";
+
+/*********************************/
+/*               PC              */
+/*********************************/
+@media (min-width: 769px) and (max-width: 1279px) {
+  #index {
+    & .top {
+    }
+    & .message {
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  #index {
+    & .top {
+    }
+    & .message {
+    }
+  }
+}
+
+/*********************************/
+/*               SP              */
+/*********************************/
+@media (max-width: 768px) {
+  #index {
+    & .top {
+    }
+    & .message {
+    }
+  }
+}
